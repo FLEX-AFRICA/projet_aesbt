@@ -1,0 +1,67 @@
+import {
+  BarChart3,
+  BookOpen,
+  Calendar,
+  FileText,
+  Files,
+  GraduationCap,
+  HandHelping,
+  History,
+  Home,
+  Atom,
+  Bell,
+  Image,
+  Images,
+  LayoutDashboard,
+  Library,
+  ListTree,
+  Mail,
+  Newspaper,
+  Settings,
+  Share2,
+  ShieldCheck,
+  Sparkles,
+  Telescope,
+  User,
+  UserCog,
+  Users,
+  UsersRound,
+  type LucideIcon,
+} from "lucide-react";
+
+/**
+ * Icônes disponibles pour la navigation. Un composant serveur ne peut pas
+ * passer un composant (fonction) à un composant client : il transmet le NOM de
+ * l'icône, résolu ici côté client. Pour en ajouter une, l'importer et l'inscrire.
+ */
+export const ICONES = {
+  accueil: Home,
+  tableauDeBord: LayoutDashboard,
+  statistiques: BarChart3,
+  editeur: Sparkles,
+  publications: Newspaper,
+  albums: Images,
+  evenements: Calendar,
+  documents: FileText,
+  ressources: Library,
+  mediatheque: Image,
+  comptes: UserCog,
+  membres: UsersRound,
+  moderation: ShieldCheck,
+  messages: Mail,
+  parametres: Settings,
+  journal: History,
+  profil: User,
+  mentors: Users,
+  mentorat: HandHelping,
+  cours: BookOpen,
+  fichiers: Files,
+  cellule: GraduationCap,
+  decouverte: Telescope,
+  referentiels: ListTree,
+  poles: Atom,
+  notifications: Bell,
+  partage: Share2,
+} satisfies Record<string, LucideIcon>;
+
+export type NomIcone = keyof typeof ICONES;

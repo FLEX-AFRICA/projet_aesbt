@@ -1,0 +1,59 @@
+# Dépendances
+node_modules
+.pnp
+.pnp.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Tests et outils
+coverage/
+.eslintcache
+.turbo
+
+# Vercel
+.vercel
+
+# Variables d'environnement : seuls les modèles *.example sont versionnés
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+
+# Clés et certificats
+*.pem
+
+# Outils d'assistance (réglages locaux, serveurs MCP pouvant contenir des clés)
+.claude/
+.mcp.json
+
+# Export ponctuel vers le backend
+export-contenu.json
+
+# Éditeurs
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+Desktop.ini
